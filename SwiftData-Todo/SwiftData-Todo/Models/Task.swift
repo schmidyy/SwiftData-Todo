@@ -10,9 +10,10 @@ import SwiftData
 
 @Model
 final class Task {
-	@Attribute(.unique) var id: UUID
-	var name: String
+	@Attribute(.unique)
+	var id: UUID
 	
+	var name: String
 	var createdAt: Date
 	var completed: Bool
 	var color: String
