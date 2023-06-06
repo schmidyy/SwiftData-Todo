@@ -10,11 +10,11 @@ import SwiftData
 
 @main
 struct SwiftData_TodoApp: App {
-
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-        .modelContainer(for: Item.self)
-    }
+	
+	var body: some Scene {
+		WindowGroup {
+			TaskListView()
+		}
+		.modelContainer(for: Task.self)
+	}
 }
